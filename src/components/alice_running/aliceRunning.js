@@ -17,12 +17,12 @@ const AliceRunning = () => {
             iterations: Infinity
         }
     });
-
+ 
     useEffect(() => {
     document.addEventListener("click", () => {     
      const animation = getAnimation();
-     animation.updatePlaybackRate(animation.playbackRate += 1);  
-     
+     animation.updatePlaybackRate(animation.playbackRate * 1.1);  
+    
     })
     
   });
